@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Despensa_login_MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_margin="10dp"
+        android:background="@color/fondo">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INGRESO A LA APLICACION"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColorHint="#009688"
+            android:textColor="#FFFF"
+            android:background="#18235C"/>
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:ems="10"
+            android:hint="Email"
+            android:textAlignment="center"
+            android:inputType="textEmailAddress"
+            android:textSize="20dp"
+            android:textColorHint="@color/texto"
+            android:textColor="#FFFF"/>
+
+        <EditText
+            android:id="@+id/txtPass"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/texto"
+            android:textColor="#FFFF"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/botonredondo"
+                android:onClick="validarLogin"
+                android:text=" ingresar "
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/botonredondo"
+                android:onClick="salir"
+                android:text=" salir "
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btnLista"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/botonredondo2"
+                android:onClick="ingresaRecordatorio"
+                android:text=" recordar!! "
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edtCantidad"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="cant."
+                android:inputType="number"
+                android:textColorHint="@color/texto"
+                android:textColor="#FFFF"/>
+
+            <EditText
+                android:id="@+id/edtNombre"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="nombre"
+                android:inputType="text"
+                android:textColorHint="@color/texto"
+                android:textColor="#FFFF"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/ListView_lista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:textColorHint="#009688"
+            android:textColor="#FFFF"
+            ></ListView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+

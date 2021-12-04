@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivitySumarRestar">
+
+    <LinearLayout
+        android:id="@+id/l_sumar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_margin="20dp"
+        android:background="#151414">
+        <Spinner
+            android:id="@+id/spinnerOrigen"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColorHint="#009688"
+            android:textColor="#FFFF"/>
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:textSize="18dp"
+            android:textColorHint="#009688"
+            android:textColor="#FFFF"/>
+
+        <EditText
+            android:id="@+id/et_articulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="nombre artículo"
+            android:inputType="textPersonName"
+            android:textSize="30dp"
+            android:textColorHint="#009688"
+            android:textColor="#FFFF"/>
+
+        <EditText
+            android:id="@+id/et_valor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="valor"
+            android:inputType="numberDecimal|numberSigned"
+            android:textSize="30dp"
+            android:textColorHint="#009688"
+            android:textColor="#FFFF"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColorHint="#009688"
+            android:textColor="#FFFF"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#009688"
+            android:textColor="#FFFF">
+
+            <EditText
+                android:id="@+id/edtNvaCategoria"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="nueva categoria"
+                android:inputType="text"
+                android:textColorHint="#009688"
+                android:textColor="#FFFF"/>
+
+            <Button
+                android:id="@+id/btnCategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/botonredondo"
+                android:onClick="ingresarNvaCategoria"
+                android:text=" ingresar " />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_cantidadsuma"
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="cantidad"
+                android:inputType="numberDecimal|numberSigned"
+                android:textSize="30dp"
+                android:textColorHint="#009688"
+                android:textColor="#FFFF"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botonredondo"
+                android:onClick="sumarArticulo"
+                android:text="+"
+                android:textSize="40dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botonredondo2"
+                android:onClick="restarArticulo"
+                android:text="-"
+                android:textSize="40dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="grabarArticulo"
+            android:text="almacenar en despensa"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonredondo"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="grabarCarrito"
+            android:text="carrito de compras"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonredondo"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Scanear"
+            android:text="leer codigo |||||||||||"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonredondo2"
+            android:textSize="35dp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

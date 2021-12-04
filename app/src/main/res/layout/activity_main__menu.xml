@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_Menu"
+    android:layout_gravity="center"
+    android:background="#CC6079">
+
+    <TextView
+        android:id="@+id/Texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:textSize="40dp"
+        android:text="Menu de Acciones"
+        android:textAlignment="center"
+        android:background="#135893"
+        android:textColor="#FFFFFF">
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/transparent"
+        android:onClick="listarDespensa"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Texto"
+        app:srcCompat="@drawable/listado"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="44dp"
+        android:background="@android:color/transparent"
+        android:onClick="sumarRestarDespensa"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton1"
+        app:srcCompat="@drawable/despensa"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:onClick="listaCompras"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Texto"
+        app:srcCompat="@drawable/abarrotes2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/transparent"
+        android:onClick="carritoCompras"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:srcCompat="@drawable/carro_de_compras2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/transparent"
+        android:onClick="eliminarDespensa"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:srcCompat="@drawable/eliminaista"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
+        android:onClick="cerrar"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:srcCompat="@drawable/salida"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

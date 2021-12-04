@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityEliminar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_margin="10dp"
+        android:background="@color/fondo">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LISTA DE COMPRA PARA RECORDAR"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            tools:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textColorHint="#009688"
+            android:textColor="#FFFF"/>
+        <ListView
+            android:id="@+id/ListView_lista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:choiceMode="multipleChoice"
+            android:textColor="#FFFF"></ListView>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

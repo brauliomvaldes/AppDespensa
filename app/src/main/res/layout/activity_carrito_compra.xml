@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarritoCompraActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_margin="20dp"
+        android:background="@color/fondo">
+
+        <ListView
+            android:id="@+id/ListView_lista"
+            android:layout_width="match_parent"
+            android:layout_height="387dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:textColorHint="@color/texto"
+            android:textColor="@color/texto"></ListView>
+
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:onClick="enviarMensajeCarrito"
+            android:text="enviar mensaje Whatsapp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonredondo"/>
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:onClick="vaciarCarrito"
+            android:text="vaciar carrito"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonredondo"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

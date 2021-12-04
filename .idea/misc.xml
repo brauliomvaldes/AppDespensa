@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/DespensaApp final fuentes/app/src/main/res/drawable/botonredondo.xml" value="0.1609375" />
+        <entry key="..\:/DespensaApp final fuentes/app/src/main/res/drawable/botonredondo2.xml" value="0.1609375" />
+        <entry key="..\:/DespensaApp final fuentes/app/src/main/res/layout/activity_carrito_compra.xml" value="0.18" />
+        <entry key="..\:/DespensaApp final fuentes/app/src/main/res/layout/activity_despensa_login.xml" value="0.18" />
+        <entry key="..\:/DespensaApp final fuentes/app/src/main/res/layout/activity_main__menu.xml" value="0.18" />
+        <entry key="..\:/DespensaApp final fuentes/app/src/main/res/layout/activity_main_eliminar.xml" value="0.18" />
+        <entry key="..\:/DespensaApp final fuentes/app/src/main/res/layout/activity_main_lista_compras.xml" value="0.18" />
+        <entry key="..\:/DespensaApp final fuentes/app/src/main/res/layout/activity_main_registro.xml" value="0.18" />
+        <entry key="..\:/DespensaApp final fuentes/app/src/main/res/layout/activity_main_sumar_restar.xml" value="0.1" />
+        <entry key="..\:/DespensaApp final fuentes/app/src/main/res/layout/activity_tabla_despensa.xml" value="0.1" />
+        <entry key="..\:/DespensaApp final fuentes/app/src/main/res/layout/activity_view_pdf.xml" value="0.1" />
+        <entry key="..\:/DespensaApp final fuentes/app/src/main/res/layout/spinner_item.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">MI DESPENSA app</string>
+    <string name="t_carrito">Carrito de Compras</string>
+    <string name="t_eliminar">Eliminar Artículos</string>
+    <string name="t_lista">Chequea stock articulos</string>
+    <string name="t_listadespensa">Lista Despensa</string>
+    <string name="t_despensa">Actualiza Stock Despensa</string>
+    <string name="Lista">Lista</string>
+    <string name="Volver">Volver</string>
+
+    <string name="Buscar">Buscar</string>
+    <string name="Compartir">Compartir</string>
+    <string name="Opcion1">Opción 1</string>
+    <string name="Opcion2">Opción 2</string>
+
+    <string-array name="categorias">
+        <item>Abarrotes</item>
+        <item>Bebestibles</item>
+        <item>Carnes</item>
+        <item>Conservas</item>
+        <item>Lacteos</item>
+        <item>No peresibles</item>
+        <item>Otro</item>
+        <item>Peresibles</item>
+    </string-array>
+
+    <string-array name="origenes">
+        <item>Lider</item>
+        <item>Jumbo</item>
+        <item>Santa Isabel</item>
+        <item>Unimarc</item>
+        <item>Tottus</item>
+        <item>Monserrat</item>
+        <item>Mayorista</item>
+        <item>aCuenta</item>
+        <item>Ekono</item>
+        <item>Otro</item>
+    </string-array>
+</resources>

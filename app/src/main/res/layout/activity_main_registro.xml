@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_registro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_margin="10dp"
+        android:background="#151414">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro de Usuario"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textColor="#009688"/>
+
+        <EditText
+            android:id="@+id/txtRun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="r.u.n."
+            android:textColorHint="#009688"
+            android:textColor="#FFFF"
+            android:inputType="textPersonName"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColorHint="#009688"
+            android:textColor="#FFFFFF"
+            android:hint="nombre"
+            android:inputType="textPersonName"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/spinnerComuna"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#009688"
+            android:textColorHint="#FFFFFF"
+            android:textSize="50sp" />
+
+        <Spinner
+            android:id="@+id/spinnerCiudad"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#009688"
+            android:textColorHint="#009688"
+            android:textSize="50sp" />
+
+        <Spinner
+            android:id="@+id/spinnerEdad"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#009688"
+            android:textSize="50sp" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColorHint="#009688"
+            android:textColor="#FFFFFF"
+            android:hint="correo"
+            android:inputType="textEmailAddress"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/txtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="clave"
+            android:textColorHint="#009688"
+            android:textColor="#000000"
+            android:inputType="textPassword"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="registrarUsuario"
+            android:text="registrarse"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonredondo"
+            android:textColor="#FFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/link_to_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ya tienes cuenta! Accede!"
+            android:textColor="#009688"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

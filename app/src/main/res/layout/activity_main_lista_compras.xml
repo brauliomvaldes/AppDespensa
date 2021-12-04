@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityListaCompras">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_margin="10dp"
+        android:background="@color/fondo">
+
+        <EditText
+            android:id="@+id/et_minimo"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:hint="cantidad minima stock para compra"
+            android:inputType="numberDecimal|numberSigned"
+            android:textSize="18sp"
+            android:textColorHint="@color/texto"
+            android:textColor="#FFFF"/>
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="actualizaLista"
+            android:text="actualizar minimo para compra"
+            android:textSize="18sp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonredondo"/>
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:onClick="pdfView"
+            android:text="generar documento PDF"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonredondo"/>
+
+        <Button
+            android:id="@+id/button20"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:onClick="enviarWhatsapp"
+            android:text="enviar por whatsapp"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonredondo"/>
+
+        <ListView
+            android:id="@+id/ListView_lista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:textColorHint="@color/texto"
+            android:textColor="@color/texto"></ListView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
